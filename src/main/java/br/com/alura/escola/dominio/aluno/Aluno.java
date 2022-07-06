@@ -21,14 +21,14 @@ public class Aluno {
 	}
 
 	public void adicionarTelefone(String ddd, String numero) {
-		if (telefones.size() == 2 ) {
-			throw new IllegalArgumentException("Pode-se cadastrar no máximo 2 números de Telefone");
+		if (telefones.size() == 2) {
+			throw new IllegalArgumentException("Numero maximo de telefones ja atingido!");
 		}
 		this.telefones.add(new Telefone(ddd, numero));
 	}
 	
-	public String getCpf() {
-		return cpf.getNumero();
+	public CPF getCpf() {
+		return cpf;
 	}
 	
 	public String getNome() {
